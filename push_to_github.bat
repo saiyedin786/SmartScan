@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Gradle 8.4 Version Pin Fix
+echo     SmartScan - Upload Final Manifest Icon Fix
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Pin Gradle version to 8.4 for AGP 8.1.4 compatibility"
+git commit -m "Fix AndroidManifest app icon resource reference"
 git push origin main
 
 echo.
