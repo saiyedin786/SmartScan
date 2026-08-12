@@ -1,14 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Wrapper Jar Fix to GitHub
+echo     SmartScan - Upload Repository Fix to GitHub
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
-git add -f gradle/wrapper/gradle-wrapper.jar
 git add .
-git commit -m "Use setup-gradle action and include wrapper jar"
+git commit -m "Fix settings repositories conflict in build.gradle.kts"
 git push origin main
 
 echo.
