@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Repository Fix to GitHub
+echo     SmartScan - Upload Buildscript Repositories Fix
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Fix settings repositories conflict in build.gradle.kts"
+git commit -m "Add buildscript repositories for AGP and set PREFER_SETTINGS mode"
 git push origin main
 
 echo.
