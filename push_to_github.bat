@@ -1,14 +1,14 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Fix to GitHub Actions
+echo     SmartScan - Upload Plugin Fix to GitHub
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Add gradlew script and setup-gradle workflow for online build"
-git push -u origin main
+git commit -m "Fix Android Gradle Plugin versions and Proguard config"
+git push origin main
 
 echo.
 echo =======================================================
