@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Line Ending Fix to GitHub
+echo     SmartScan - Upload JVM Opts Fix to GitHub
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Fix Windows CRLF line endings for Linux runner"
+git commit -m "Fix DEFAULT_JVM_OPTS ClassNotFoundException in gradlew"
 git push origin main
 
 echo.
