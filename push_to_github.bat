@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Configuration Fix to GitHub
+echo     SmartScan - Upload Standard Build Fix to GitHub
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Add gradle.properties and sync Compose compiler version"
+git commit -m "Switch to standard AGP buildscript classpath & gradlew execution"
 git push origin main
 
 echo.
