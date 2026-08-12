@@ -9,24 +9,17 @@ cd /d "%~dp0"
 echo Initializing Git repository...
 git init
 git add .
-git commit -m "Build SmartScan Android Document Scanner App"
+git commit -m "Add full SmartScan Android codebase and GitHub Actions APK build workflow"
 
 echo.
-set /p REPO_URL="Enter your GitHub Repository URL (e.g. https://github.com/yourusername/SmartScan.git): "
-
-if "%REPO_URL%"=="" (
-    echo [!] Repository URL cannot be empty.
-    pause
-    exit /b
-)
+git remote set-url origin https://github.com/saiyedin786/SmartScan.git 2>nul || git remote add origin https://github.com/saiyedin786/SmartScan.git
 
 git branch -M main
-git remote add origin %REPO_URL%
 git push -u origin main
 
 echo.
 echo =======================================================
-echo  Uploaded successfully! 
-echo  Go to your GitHub repo -> Actions tab to download APK!
+echo  Uploaded successfully to https://github.com/saiyedin786/SmartScan !
+echo  Go to your GitHub repo -> Actions tab to download your APK!
 echo =======================================================
 pause
