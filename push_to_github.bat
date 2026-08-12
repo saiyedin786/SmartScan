@@ -1,13 +1,13 @@
 @echo off
 echo =======================================================
-echo     SmartScan - Upload Buildscript Repositories Fix
+echo     SmartScan - Upload Plugin ID Fix to GitHub
 echo =======================================================
 echo.
 
 cd /d "%~dp0"
 
 git add .
-git commit -m "Add buildscript repositories for AGP and set PREFER_SETTINGS mode"
+git commit -m "Fix Kotlin plugin IDs to org.jetbrains.kotlin.android and org.jetbrains.kotlin.kapt"
 git push origin main
 
 echo.
